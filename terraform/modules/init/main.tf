@@ -48,3 +48,7 @@ resource "google_project_service" "iam" {
 resource "google_project_service" "cloudresourcemanager" {
   service = "cloudresourcemanager.googleapis.com"
 }
+# Enable the Google Kubernetes Engine API
+resource "google_project_service" "gke" {
+  service = "container.googleapis.com"
+}
